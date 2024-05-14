@@ -23,10 +23,6 @@
         }   
 
         &:disabled{
-            border: 1px solid #8F9BB33D;
-            background: #8F9BB329;
-            color: #8F9BB3;
-
             @include button-p(16px 26px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
         }
     }

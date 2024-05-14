@@ -120,9 +120,6 @@ html {
   cursor: pointer;
 }
 .button__wrap .button--giant:disabled {
-  border: 1px solid rgba(143, 155, 179, 0.2392156863);
-  background: rgba(143, 155, 179, 0.1607843137);
-  color: #8F9BB3;
   padding: 16px 26px;
   background-color: rgba(143, 155, 179, 0.1607843137);
   border-radius: 4px;
