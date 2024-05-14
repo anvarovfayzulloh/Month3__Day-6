@@ -14,5 +14,27 @@
     border-radius: $br;
     border: $b;
     cursor: $cur;
-    
+}
+
+@mixin input-p($fw, $fs, $lh, $bc, $c, $br, $b: 1px solid #E4E9F2 ){
+    font-family: 'Roboto';
+    font-weight: $fw;
+    outline: none;
+    padding: 12px 16px;
+    max-width: 296px;
+    width: 100%;
+    font-size: $fs;
+    line-height: $lh;
+    background-color: $bc;
+    color: $c;
+    border-radius: $br;
+    border: $b;
+}
+
+@mixin input-place($fw, $fs, $lh, $c){
+    font-family: 'Roboto';
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $c;
 }

@@ -1,0 +1,26 @@
+.inputs{
+    @include input-p(500, 14px, 24px, #FAFAFB, #222B45, 4px);
+    
+    &::placeholder{
+        @include input-place(400, 14px, 20px, #8F9BB3)
+    }
+
+    &:focus{
+        @include input-p(500, 14px, 24px, #FFFFFF, #222B45, 4px,1px solid #3366FF )
+    }
+
+    &:hover{
+        @include input-p(500, 14px, 24px, #EDF1F7, #222B45, 4px);
+
+        &::placeholder{
+            @include input-place(400, 14px, 20px, #8F9BB3)
+        }
+    }
+
+    &:disabled{
+        @include input-p(400, 14px, 20px, #FAFAFB, #8F9BB3, 4px, 1px solid #E4E9F2);
+        opacity: 0.48;
+        cursor: no-drop;
+        margin-top:30px;
+    }
+}
