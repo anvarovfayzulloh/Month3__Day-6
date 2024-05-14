@@ -1,0 +1,33 @@
+.button__wrap{
+    max-width: 120px;
+    display: flex;
+    justify-content: center;
+
+    &:focus &:active{
+        padding: 4px 4px;
+        border-radius: 4px;
+        background-color: hsla(220, 19%, 63%, 0.16);
+    }
+
+    .button--giant{
+        @include button-p(16px 26px, #3366FF, 4px,none );
+    
+        @include button-f(14px, 700, 16px,);
+    
+        &:hover{
+            @include button-p(16px 26px, #598BFF, 4px,none);
+        }
+    
+        &:active{
+            @include button-p(16px 26px, #274BDB, 4px,none)
+        }   
+
+        &:disabled{
+            border: 1px solid #8F9BB33D;
+            background: #8F9BB329;
+            color: #8F9BB3;
+
+            @include button-p(16px 26px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
+        }
+    }
+}

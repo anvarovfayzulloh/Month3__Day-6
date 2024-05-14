@@ -1,0 +1,18 @@
+// FOR COMMONS
+
+@mixin button-f($fs, $fw, $lh, $c: #ffffff){
+    font-family: 'Roboto';
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin button-p($p, $bc, $br, $b, $cur: pointer){
+    padding: $p;
+    background-color: $bc;
+    border-radius: $br;
+    border: $b;
+    cursor: $cur;
+    
+}

@@ -1,0 +1,15 @@
+// MAIN
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "common";
+
+// BLOCKS
+@import "./blocks/buttons";
+
+.buttons__wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
