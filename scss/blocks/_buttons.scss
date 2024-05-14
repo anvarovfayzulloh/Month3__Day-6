@@ -1,18 +1,16 @@
 .button__wrap{
-    max-width: 120px;
+    width: 100%;
+    max-width: 50%;
     display: flex;
-    justify-content: center;
-
-    &:focus &:active{
-        padding: 4px 4px;
-        border-radius: 4px;
-        background-color: hsla(220, 19%, 63%, 0.16);
-    }
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+    padding-top: 30px;
 
     .button--giant{
         @include button-p(16px 26px, #3366FF, 4px,none );
     
-        @include button-f(14px, 700, 16px,);
+        @include button-f(18px, 700, 24px,);
     
         &:hover{
             @include button-p(16px 26px, #598BFF, 4px,none);
@@ -24,6 +22,75 @@
 
         &:disabled{
             @include button-p(16px 26px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
+        };
+    }
+    .button--large{
+        @include button-p(13px 23px, #3366FF, 4px,none );
+    
+        @include button-f(16px, 700, 20px,);
+    
+        &:hover{
+            @include button-p(13px 23px, #598BFF, 4px,none);
+        }
+    
+        &:active{
+            @include button-p(13px 23px, #274BDB, 4px,none)
+        }   
+
+        &:disabled{
+            @include button-p(13px 23px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
         }
     }
+    .button--medium{
+        @include button-p(12px 23px, #3366FF, 4px,none );
+    
+        @include button-f(14px, 700, 16px,);
+    
+        &:hover{
+            @include button-p(12px 23px, #598BFF, 4px,none);
+        }
+    
+        &:active{
+            @include button-p(12px 23px, #274BDB, 4px,none)
+        }   
+
+        &:disabled{
+            @include button-p(12px 23px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
+        }
+    }
+    .button--small{
+        @include button-p(8px 18px, #3366FF, 4px,none );
+    
+        @include button-f(14px, 700, 16px,);
+    
+        &:hover{
+            @include button-p(8px 18px, #598BFF, 4px,none);
+        }
+    
+        &:active{
+            @include button-p(8px 18px, #274BDB, 4px,none)
+        }   
+
+        &:disabled{
+            @include button-p(8px 18px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
+        }
+    }
+    .button--tiny{
+        @include button-p(6px 13px, #3366FF, 4px,none );
+    
+        @include button-f(14px, 700, 16px,);
+    
+        &:hover{
+            @include button-p(6px 13px, #598BFF, 4px,none);
+        }
+    
+        &:active{
+            @include button-p(6px 13px, #274BDB, 4px,none)
+        }   
+
+        &:disabled{
+            @include button-p(6px 13px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
+        }
+    }
+    
 }

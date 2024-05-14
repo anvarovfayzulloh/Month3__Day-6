@@ -6,10 +6,13 @@
 
 // BLOCKS
 @import "./blocks/buttons";
+@import "./blocks/inputs";
 
 .buttons__wrapper{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
 }
