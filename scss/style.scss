@@ -7,11 +7,28 @@
 // BLOCKS
 @import "./blocks/buttons";
 @import "./blocks/inputs";
+@import "./blocks/tables";
 
-.buttons__wrapper{
-    max-width: 1440px;
+.container{
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:center;
+    align-items: flex-start;
+    height: 100vh;
+    gap: 40px;
+    padding: 100px 100px;
+    
+}
+
+.wrapper{
     display: flex;
+    align-items: flex-end;
+    gap: 17px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
+    padding: 20px;
+    width: max-content;
+    border-radius: 10px;
 }

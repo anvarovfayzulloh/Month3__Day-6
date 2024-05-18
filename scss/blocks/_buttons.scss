@@ -1,12 +1,3 @@
-.button__wrap{
-    width: 100%;
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    box-sizing: border-box;
-    padding-top: 30px;
-
     .button--giant{
         @include button-p(16px 26px, #3366FF, 4px,none );
     
@@ -92,5 +83,197 @@
             @include button-p(6px 13px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
         }
     }
+    .icon--giant{
+        background-color: #3366FF;
+        padding: 14px 14px 12px 14px;
+        border-radius: 8px;
+        border: none;
+
+        &:hover{
+            background-color: #598BFF;
+        }
+        &:active{
+            background-color: #274BDB;
+        }
+        &:disabled{
+            background-color: #8F9BB33D;
+            border: 1px solid #8F9BB33D;
+        }
+    }
+    .icon--large{
+        background-color: #3366FF;
+        padding: 12px 12px 10px 12px;
+        border-radius: 8px;
+        border: none;
+
+        &:hover{
+            background-color: #598BFF;
+        }
+        &:active{
+            background-color: #274BDB;
+        }
+        &:disabled{
+            background-color: #8F9BB33D;
+            border: 1px solid #8F9BB33D;
+        }
+    }
+    .icon--medium{
+        background-color: #3366FF;
+        padding: 10px 10px 8px 10px;
+        border-radius: 8px;
+        border: none;
+
+        &:hover{
+            background-color: #598BFF;
+        }
+        &:active{
+            background-color: #274BDB;
+        }
+        &:disabled{
+            background-color: #8F9BB33D;
+            border: 1px solid #8F9BB33D;
+        }
+    }
+    .icon--small{
+        background-color: #3366FF;
+        padding: 8px 8px 6px 8px;
+        border-radius: 8px;
+        border: none;
+
+        &:hover{
+            background-color: #598BFF;
+            color: red;
+        }
+        &:active{
+            background-color: #274BDB;
+        }
+        &:disabled{
+            background-color: #8F9BB33D;
+            border: 1px solid #8F9BB33D;
+        }
+    }
+    .icon--tiny{
+        background-color: #3366FF;
+        padding: 6px 6px 4px 6px;
+        border-radius: 8px;
+        border: none;
+
+        &:hover{
+            background-color: #598BFF;
+        }
+        &:active{
+            background-color: #274BDB;
+        }
+        &:disabled{
+            background-color: #8F9BB33D;
+            border: 1px solid #8F9BB33D;
+        }
+    }
+
+    .button--large-static{
+        @include button-p(13px 23px, #3366FF, 4px,none );
     
-}
+        @include button-f(16px, 700, 20px,);
+    }
+    .button--large-hover{
+        @include button-p(13px 23px, #598BFF, 4px,none); 
+    
+        @include button-f(16px, 700, 20px,);
+    }
+    .button--large-active{
+        @include button-p(13px 23px, #274BDB, 4px,none);
+    
+        @include button-f(16px, 700, 20px,);
+    }
+    .button--large-focus{
+        @include button-p(13px 23px, #274BDB, 4px,4px solid hsl(220, 19%, 84%));
+    
+        @include button-f(16px, 700, 20px,);
+    }
+
+    .button-large-outline{
+        @include button-p(13px 23px, hsla(225, 100%, 60%, 0.086), 4px, 1px solid #274BDB);
+    
+        @include button-f(16px, 700, 20px,);
+        color: #274BDB;
+    }
+    .button-large-ghost{
+        @include button-p(13px 23px, transparent, 4px, none);
+    
+        @include button-f(16px, 700, 20px,);
+        color: #274BDB;
+    }
+    .button-large-g-h{
+        @include button-p(13px 23px, #C9E7E5, 4px, none);
+    
+        @include button-f(16px, 700, 20px,);
+        color: #274BDB;
+    }
+    .button-large-g-a{
+        @include button-p(13px 23px, #C9E7E5, 4px, none);
+    
+        @include button-f(16px, 700, 20px,);
+        color: #274BDB;
+    }
+    .button-large-out-focus{
+        @include button-p(13px 23px, hsla(225, 100%, 60%, 0.078), 4px, 4px solid hsl(220, 19%, 84%));
+    
+        @include button-f(16px, 700, 20px,);
+        color: #274BDB;
+    }
+    .disabled--outline{
+        @include button-p(13px 23px, transparent, 4px, none);
+    
+    
+        @include button-f(16px, 700, 20px,);
+        color: hsl(220, 19%, 84%);
+    }
+    .button-large-gh-f{
+        @include button-p(13px 23px, hsla(220, 19%, 63%, 0.161), 4px, 4px solid #ced4de68);
+    
+    
+        @include button-f(16px, 700, 20px,);
+        color: #3366FF;
+    }
+    .button-large-gh{
+        @include button-p(13px 23px, rgba(143, 155, 179, 0.161), 4px, none);
+    
+    
+        @include button-f(16px, 700, 20px,);
+        color: #8F9BB3;
+    }
+
+    .button-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
+        max-width: 175px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 10px
+    }
+    .button--icon{
+        @include button-p(12px 23px, #3366FF, 4px,none );
+    
+        @include button-f(14px, 700, 16px,);
+    
+        &:hover{
+            @include button-p(12px 23px, #598BFF, 4px,none);
+        }
+    
+        &:active{
+            @include button-p(12px 23px, #274BDB, 4px,none)
+        }   
+
+        &:disabled{
+            @include button-p(12px 23px,#8F9BB329, 4px, 1px solid #8F9BB33D,  no-drop)
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px 8px;
+    }

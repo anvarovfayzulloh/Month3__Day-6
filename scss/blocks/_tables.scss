@@ -1,0 +1,94 @@
+thead{
+    background-color: #F7F9FC;
+
+    th{
+        padding: 20px 0px 20px 36px;
+        box-sizing: border-box;
+
+        &:first-child{
+            width: 120px;
+            text-align: left;
+            border-right: 1px solid #EDF1F7;
+            font-family: "Opwn Sans", sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+
+        }
+        &:nth-child(2){
+            width: 190px;
+            text-align: left;
+            border-right: 1px solid #EDF1F7;
+            color: #8F9BB3;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &:nth-child(3){
+            width: 190px;
+            text-align: left;
+            border-right: 1px solid #EDF1F7;
+            color: #8F9BB3;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &:last-child{
+            width: 190px;
+            text-align: left;
+            color: #8F9BB3;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
+tbody{
+
+
+    td{
+        padding: 20px 32px 20px 36px;
+        box-sizing: border-box;
+
+        &:first-child{
+            width: 120px;
+            text-align: left;
+            color: #8F9BB3;
+            border-right: 1px solid #EDF1F7;
+            font-family: "Opwn Sans", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            padding-right: 10px;
+
+        }
+        &:nth-child(2){
+            width: 190px;
+            text-align: center;
+            border-right: 1px solid #EDF1F7;
+            color: #8F9BB3;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            padding-right: 36px;
+        }
+        &:nth-child(3){
+            width: 190px;
+            text-align: center;
+            border-right: 1px solid #EDF1F7;
+            color: #8F9BB3;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            padding-right: 60px;
+        }
+        &:last-child{
+            width: 190px;
+            text-align: center;
+            color: #8F9BB3;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            border-right: 1px solid #EDF1F7;
+            padding-right: 36px;
+        }
+    }
+}

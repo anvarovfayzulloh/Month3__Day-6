@@ -5,55 +5,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="buttons__wrapper" >
-        <div style="width: 50%;" >
-            <div class="button__wrap" >
-                <button class="button--giant" >
-                    BUTTON
-                </button>
-                <button disabled class="button--giant" >
-                    BUTTON
-                </button>
-            </div>
-            <div class="button__wrap" >
-                <button class="button--large" >
-                    BUTTON
-                </button>
-                <button disabled class="button--large" >
-                    BUTTON
-                </button>
-            </div>
-            <div class="button__wrap" >
-                <button class="button--medium" >
-                    BUTTON
-                </button>
-                <button disabled class="button--medium" >
-                    BUTTON
-                </button>
-            </div>
-            <div class="button__wrap" >
-                <button class="button--small" >
-                    BUTTON
-                </button>
-                <button disabled class="button--small" >
-                    BUTTON
-                </button>
-            </div>
-            <div class="button__wrap" >
-                <button class="button--tiny" >
-                    BUTTON
-                </button>
-                <button disabled class="button--tiny" >
-                    BUTTON
-                </button>
-            </div>
+    <div class="container">
+        <div class="wrapper" >
+            <button class="button--giant" >Button</button>
+            <button class="button--large" >Button</button>
+            <button class="button--medium" >Button</button>
+            <button class="button--small" >Button</button>
+            <button class="button--tiny" >Button</button>
         </div>
-        <div style=" padding-top: 30px; width: 50%;" >
-            <input placeholder="Placeholder" class="inputs" type="text">
-            <input disabled placeholder="Placeholder" class="inputs" type="text">
-        </div>  
+        <div class="wrapper" >
+            <button  class="icon--giant" ><img src="./images/star-giant.svg" alt=""></button>
+            <button class="icon--large" ><img src="./images/star-large.svg" alt=""></button>
+            <button class="icon--medium" ><img src="./images/star-medium.svg" alt=""></button>
+            <button class="icon--small" ><img src="./images/star-small.svg" alt=""></button>
+            <button class="icon--tiny" ><img src="./images/star-tiny.svg" alt=""></button>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            State
+                        </th>
+                        <th>
+                            Fill
+                        </th>
+                        <th>
+                            Outline
+                        </th>
+                        <th>
+                            Ghost
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table_font" >
+                        <td>
+                            Default
+                        </td>
+                        <td>
+                            <button class="button--large-static" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-outline" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-ghost" >
+                                Default
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Hover
+                        </td>
+                        <td>
+                            <button class="button--large-hover" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-outline" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-g-h" >
+                                Hover
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            <button class="button--large-active" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-outline" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-g-a" >
+                                Active
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Focus
+                        </td>
+                        <td>
+                            <button class="button--large-focus" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-out-focus" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-gh-f" >
+                                Button
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Disabled
+                        </td>
+                        <td>
+                            <button class="button--large" disabled >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="disabled--outline" >
+                                Button
+                            </button>
+                        </td>
+                        <td>
+                            <button class="button-large-gh" >
+                                Button
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="button-icon" >
+            <button class="button--icon" >
+                <img src="./images/star-medium.svg" alt="">
+                Button
+            </button>
+            <button class="button--icon" >
+                Button
+                <img src="./images/star-medium.svg" alt="">
+            </button>
+            
+            <button class="button--icon" >
+                Button
+            </button>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            State
+                        </th>
+                        <th>
+                            Input
+                        </th>
+                        <th>
+                            
+                            Input + Icon
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table_font" >
+                        <td>
+                            Default
+                        </td>
+                        <td>
+                            <input placeholder="Placeholder" class="inputs" type="text">
+                        </td>
+                        <td>
+                            <input placeholder="Placeholder" class="inputs  input-icon" type="text">
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Input Text
+                        </td>
+                        <td>
+                           <input placeholder="Placeholder" value="Input Text" class="inputs" type="text"> 
+                        </td>
+                        <td>
+                           <input placeholder="Placeholder" value="Input Text" class="inputs  input-icon" type="text">
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Hover
+                        </td>
+                        <td>
+                            <input placeholder="Placeholder" class="inputs" type="text">
+                        </td>
+                        <td>
+                           <input placeholder="Placeholder" class="inputs  input-icon" type="text">
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Focus
+                        </td>
+                        <td>
+                           <input value="Typing" placeholder="Placeholder" class="inputs-focus" type="text">
+                        </td>
+                        <td>
+                            <input value="Typing" placeholder="Placeholder" class="inputs-focus-icon" type="text">
+                            
+                        </td>
+                    </tr>
+                    <tr class="table_font" >
+                        <td>
+                            Disabled
+                        </td>
+                        <td>
+                            <input disabled placeholder="Placeholder" class="inputs" type="text">
+                        </td>
+                        <td>
+                           <input disabled placeholder="Placeholder" class="inputs  input-icon" type="text">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>

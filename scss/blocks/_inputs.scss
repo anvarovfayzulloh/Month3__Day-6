@@ -1,3 +1,7 @@
+input{
+    min-width: 296px;
+}
+
 .inputs{
     @include input-p(500, 14px, 24px, #FAFAFB, #222B45, 4px);
     
@@ -23,4 +27,30 @@
         cursor: no-drop;
         margin-top:30px;
     }
+}
+
+.inputs-focus{
+    
+    @include input-p(500, 14px, 24px, #FFFFFF, #222B45, 4px,1px solid #3366FF );
+    
+    &::placeholder{
+        @include input-place(400, 14px, 20px, #8F9BB3)
+    }
+}
+
+.inputs-focus-icon{
+    
+    @include input-p(500, 14px, 24px, #FFFFFF, #222B45, 4px,1px solid #3366FF );
+    
+    &::placeholder{
+        @include input-place(400, 14px, 20px, #8F9BB3)
+    }
+    background-image: url(../../images/icon-star-large.svg);
+    background-repeat: no-repeat;
+    background-position: center right 12px; 
+}
+.input-icon{
+    background-image: url(../../images/icon-star--large.svg);
+    background-repeat: no-repeat;
+    background-position: center right 12px;
 }
